@@ -24,10 +24,12 @@ for(var j = 0; j < fruit.length;j++)
 $("#" + x).remove();
   
   if(check == 1){
+    
     var toadd = $('<li></li>');
     toadd.text(x);
-    
+    $(toadd).attr('id', x);
     toadd.appendTo('#basket');
   }   
+  else alert("Not a valid Fruit");
     
 }
